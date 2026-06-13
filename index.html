@@ -3,48 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>My Scrapbook</title>
-  
-</head>
 
-<body>
-
-<h1>My Scrapbook</h1>
-
-<div class="entry">
-  <div class="date">June 13, 2026</div>
-  <p>Cats, cannolis, coffee, what else did I miss? Enjoying life and expressing myself.</p>
-</div>
-
-</body>
-
-<div class="entry">
-  <div class="date">June 13, 2026</div>
-
-  <div class="image-grid">
-
-  <img class="wide" src="cowgirl2.JPG">
-  <img class="tall" src="cowgirl3.JPG">
-  <img class="tall" src="yeehaw3.JPG">
-
-</div>
-  <div class="image-grid">
-
-  <img src="100_1824.JPG">
-  <img src="100_1826.JPG">
-  <img src="cowgirl2.JPG">
-  <img src="cowgirl3.JPG">  
-  <img src="yeehaw1.JPG">
-  <img src="yeehaw2.JPG">
-  <img src="yeehaw3.JPG">
-  <img src="yeehaw6.JPG">
-  <img src="yeehaw7.JPG">
-  <img src="yeehaw8.JPG">
-  <img src="yeehaw9.JPG">
-  <p class="caption">Peace and love.</p>
-  <p>Starting my online scrapbook by adding my pics here instead of social media. I just felt like it was too much pressure and I can be more creative and free here. I love makeup and this cowboy hat.</p>
- 
-</div>
-  
 <style>
 body {
   background: #ffffff;
@@ -59,16 +18,13 @@ h1 {
   text-align: center;
   font-weight: normal;
   margin-bottom: 60px;
-  font-family: "Courier New", Courier, monospace;
 }
+
 .entry {
   max-width: 900px;
   margin: 0 auto 70px auto;
-  padding: 0 20px;
-  padding-bottom: 40px;
+  padding: 0 20px 40px 20px;
   border-bottom: 1px solid #e6e6e6;
-  }
-}
 }
 
 .date {
@@ -79,9 +35,17 @@ h1 {
 }
 
 img {
-  max-width: 100%;
-  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  margin-top: 12px;
   border-radius: 6px;
+}
+
+.caption {
+  font-size: 12px;
+  color: #777;
+  font-style: italic;
+  margin-top: 6px;
 }
 
 iframe {
@@ -90,27 +54,42 @@ iframe {
   margin-top: 10px;
   border-radius: 6px;
 }
-.image-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.image-grid img {
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-/* horizontal images */
-.image-grid img.wide {
-  width: 100%;
-}
-
-/* vertical images */
-.image-grid img.tall {
-  width: calc(50% - 6px);
-}  
-
 </style>
 
+</head>
+
+<body>
+
+<h1>My Scrapbook</h1>
+
+<!-- ENTRY 1 -->
+<div class="entry">
+  <div class="date">June 13, 2026</div>
+  <p>Cats, cannolis, coffee, what else did I miss? Enjoying life and expressing myself.</p>
+</div>
+
+<!-- ENTRY 2 -->
+<div class="entry">
+  <div class="date">June 13, 2026</div>
+
+  <p>Starting my online scrapbook by adding my pics here instead of social media. I just felt like it was too much pressure and I can be more creative and free here.</p>
+
+  <img src="cowgirl2.JPG">
+  <img src="cowgirl3.JPG">
+  <img src="yeehaw3.JPG">
+
+  <p class="caption">Peace and love.</p>
+
+  <img src="100_1824.JPG">
+  <img src="100_1826.JPG">
+  <img src="yeehaw1.JPG">
+  <img src="yeehaw2.JPG">
+  <img src="yeehaw6.JPG">
+  <img src="yeehaw7.JPG">
+  <img src="yeehaw8.JPG">
+  <img src="yeehaw9.JPG">
+
+</div>
+
+</body>
 </html>

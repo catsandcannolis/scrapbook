@@ -22,6 +22,13 @@
 
   <div class="image-grid">
 
+  <img class="wide" src="cowgirl2.JPG">
+  <img class="tall" src="cowgirl3.JPG">
+  <img class="tall" src="yeehaw3.JPG">
+
+</div>
+  <div class="image-grid">
+
   <img src="100_1824.JPG">
   <img src="100_1826.JPG">
   <img src="cowgirl2.JPG">
@@ -88,7 +95,26 @@ iframe {
   margin-top: 10px;
   border-radius: 6px;
 }
-  
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.image-grid img {
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* horizontal images */
+.image-grid img.wide {
+  width: 100%;
+}
+
+/* vertical images */
+.image-grid img.tall {
+  width: calc(50% - 6px);
+}  
 .image-grid {
   column-count: 2;
   column-gap: 16px;

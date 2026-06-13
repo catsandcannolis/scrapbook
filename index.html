@@ -9,9 +9,12 @@
 
   <p>Playing around with pics.</p>
 
-  <img src="100_1824.JPG">
+  <div class="image-grid">
 
-  <p class="caption">playing around with pics</p>
+  <img src="100_1824.JPG">
+  <img src="100_1826.JPG">
+
+  <p class="caption">Making my first post!</p>
 </div>
   
 <style>
@@ -57,6 +60,20 @@ iframe {
   margin-top: 10px;
   border-radius: 6px;
 }
+  
+.image-grid {
+  column-count: 2;
+  column-gap: 16px;
+  margin-top: 10px;
+}
+
+.image-grid img {
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  display: block;
+  break-inside: avoid;
+}  
 </style>
 
 </head>

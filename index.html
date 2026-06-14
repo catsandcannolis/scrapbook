@@ -58,6 +58,23 @@ iframe {
 .center-text {
   text-align: center;
 }  
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.gallery img.landscape {
+  grid-column: span 2;
+  width: 100%;
+}
+
+.gallery img.portrait {
+  grid-column: span 1;
+  width: 100%;
+}
+  
 </style>
 
 </head>
@@ -67,6 +84,12 @@ iframe {
 <h1>My Scrapbook</h1>
 <p class="center-text">Cats, cannolis, coffee. Enjoying life and expressing myself.</p>
 
+<div class="gallery">
+
+  <img class="portrait" src="girldinner9.JPG">
+  <img class="landscape" src="girldinner6.JPG">
+
+</div>
   
 <!-- ENTRY 4-->
 <div class="entry">
